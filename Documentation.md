@@ -1,6 +1,3 @@
-Documentation Template
-markdown
-Copy code
 # Documentation
 
 ## Overview
@@ -24,14 +21,12 @@ This document provides detailed information about the 6-layered macropad templat
 ### Keypad Layout
 
 |----|----|----|----|
-
-1	2	3	4
-5	6	7	8
-----	----	----	----
-9	0	A	B
-----	----	----	----
-vbnet
-Copy code
+| 1  | 2  | 3  | 4  |
+|----|----|----|----|
+| 5  | 6  | 7  | 8  |
+|----|----|----|----|
+| 9  | 0  | A  | B  |
+|----|----|----|----|
 
 ## Software Structure
 
@@ -96,19 +91,30 @@ void handleMode0(char key) {
     delay(100); Keyboard.releaseAll();
   }
 }
-Troubleshooting
-Ensure all hardware connections are secure and correct.
-Verify that the required libraries are installed in the Arduino IDE.
-Use the Serial Monitor to debug and check for error messages.
-FAQs
-How do I change the NeoPixel colors?
-Update the setColorsModeX functions with the desired colors using the pixels.setPixelColor method.
+```
 
-How do I add new modes?
-Increase the modePushCounter limit in checkModeButton.
-Add a new case statement in the loop function to handle the new mode.
-Implement the handler and color setting functions for the new mode.
-How do I use the encoders?
-Implement the logic for encoder interactions in the encoderA_ModeX and encoderB_ModeX functions for each mode.
+## Troubleshooting
+
+- Ensure all hardware connections are secure and correct.
+- Verify that the required libraries are installed in the Arduino IDE.
+- Use the Serial Monitor to debug and check for error messages.
+
+## FAQs
+
+### How do I change the NeoPixel colors?
+
+Update the `setColorsModeX` functions with the desired colors using the `pixels.setPixelColor` method.
+
+### How do I add new modes?
+
+1. Increase the `modePushCounter` limit in `checkModeButton`.
+2. Add a new `case` statement in the `loop` function to handle the new mode.
+3. Implement the handler and color setting functions for the new mode.
+
+### How do I use the encoders?
+
+Implement the logic for encoder interactions in the `encoderA_ModeX` and `encoderB_ModeX` functions for each mode.
+
+---
 
 This documentation provides a comprehensive guide to understanding, using, and customizing the 6-layered macropad template. For further assistance, refer to the source code comments and the GitHub repository.
