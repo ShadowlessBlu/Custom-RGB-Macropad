@@ -1,0 +1,34 @@
+macro-keyboard/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── docs/
+│   ├── setup_guide.md
+│   ├── user_manual.md
+│   ├── hardware_wiring_diagram.png
+│   └── images/
+├── hardware/
+│   ├── schematics/
+│   │   └── macro_keyboard_schematic.pdf
+│   ├── bill_of_materials.csv
+│   └── enclosure_design/
+│       └── enclosure.stl
+├── firmware/
+│   ├── macro_keyboard/
+│   │   ├── macro_keyboard.ino
+│   │   ├── key_handlers.ino
+│   │   ├── encoder_handlers.ino
+│   │   ├── mode_handlers.ino
+│   │   └── led_control.ino
+│   └── libraries/
+│       ├── Keypad/
+│       ├── Encoder/
+│       ├── LiquidCrystal_I2C/
+│       └── Adafruit_NeoPixel/
+└── examples/
+    ├── example1/
+    │   └── example1.ino
+    ├── example2/
+    │   └── example2.ino
+    └── README.md
+
